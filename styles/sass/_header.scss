@@ -1,0 +1,76 @@
+
+// 1280px wide
+
+body{
+    background: $darkBlueGrey;
+}
+
+header{
+    background-image: linear-gradient(90deg, rgba(0, 28, 36, 0.7) 0%, rgba(10,47,69,0.6) 100%), url(../assets/header-image.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 591px;
+}
+
+
+nav{
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+// NAV UL formatting
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 37%;
+    border: 3px solid red;
+}
+
+nav a{
+    color: $white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.1rem;
+}
+
+.headerContents{
+    display: flex;
+    justify-content: space-between;
+}
+
+// H1 Formatting
+h1{
+    color: $white;
+    padding-top: 25px;
+    font-size: 10.8rem;
+
+    // font-size: clamp(7vw, 13.8vw, 13.8rem);
+
+    // line-height: 12.6rem;
+    line-height: 9.7rem;
+
+    // width: 35%;
+    flex: 0 0 35%;
+    // width: 35%;
+    // border: 3px solid white;
+}
+
+.goldfishContainer{
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 57%;
+    // flex: 0 0 57%;
+    // border: 3px solid red;
+}
+
+
+.goldfishContainer img{
+    width: 100%;
+    // border: 3px solid pink;
+}

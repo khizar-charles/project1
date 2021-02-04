@@ -1,0 +1,52 @@
+
+// Flex container for "What is Under the Sea?" section
+// .whatIsUnder{
+//     display: flex;
+//     justify-content: center;
+//     border: 3px solid green;
+    
+// }
+
+.whatIsUnder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+    // border: 3px solid white;
+    margin: 200px 0;
+    
+}
+
+.whatIsUnder>*{
+    padding: 0 6.5vw;
+    padding-bottom: 1.95rem;
+}
+
+h2{
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: $white;
+    // font-weight: 700;
+}
+
+p{
+    font-size: 1.28rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2.44rem;
+}
+
+.lightBlueBtn{
+    background: $robinBlue;
+    color: $darkBlueGrey;
+    padding: 12px 19px;
+    border: none;
+    font-size: 1.3rem;
+    // line-height: 3.2rem;
+    // letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.darkBlueBtn{
+    background: $darkBlueGrey;
+}
