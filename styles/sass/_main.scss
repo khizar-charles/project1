@@ -14,12 +14,15 @@
     align-items: center;  
     // border: 3px solid white;
     margin: 200px 0;
-    
 }
 
 .whatIsUnder>*{
     padding: 0 6.5vw;
     padding-bottom: 1.95rem;
+}
+
+.sectionOne{
+    z-index: 5;
 }
 
 h2{
@@ -49,4 +52,102 @@ p{
 
 .darkBlueBtn{
     background: $darkBlueGrey;
+    border: none;
+    color: $white;
+    padding: 11px 13px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.greenBlog{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // border: 1px solid green;
+}
+
+.imgShadow{
+    // z-index: 2;
+    position: absolute;
+    width: 43%;
+    // height: 340px;
+    height: 26.5vw;
+    background-color: $robinBlue;
+    left: 42px;
+    top: 0;
+}
+
+.imageContainer,
+.textContainer{
+    border: 2px solid black;
+    flex: 1 1 50%;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+
+.imageContainer{
+    img{
+        position: absolute;
+        width: 44%;
+    }
+    img[alt^="Girl"]{
+        left: 0;
+        top: -40px;
+        // box-shadow: 37px 40px $robinBlue;
+        z-index: 10;
+
+    }
+    img[alt^="Singular"]{
+        bottom: -40px;
+        right: 0;
+        box-shadow: -37px 40px $robinBlue ;
+    }
+}
+
+// .imageContainer{
+//     // box-shadow: 37px 25px $robinBlue;
+//     position: relative;
+//     z-index: 2;
+//     img{
+//         // z-index: 2;
+//     }
+//     .imgShadow{
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         background-color: $robinBlue;
+//         top: 20px;
+//         z-index: 1;
+//     }
+// }
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // justify-content: space-between;
+    padding: 5.6rem;
+}
+
+.greenBlog div:nth-of-type(2){
+    padding-left: 75px;
+}
+
+.greenBlog div:nth-of-type(3){
+    align-items: flex-end;
+    text-align: end;
+}
+
+.greenSection{
+    background-color: $spruce;
+    position: relative;
+    padding: 100px 0;
+}
+
+.blueSec{
+    height: 500px;
 }

@@ -350,6 +350,10 @@ h1 {
   padding-bottom: 1.95rem;
 }
 
+.sectionOne {
+  z-index: 5;
+}
+
 h2 {
   font-size: 2.6rem;
   letter-spacing: 0.1rem;
@@ -374,4 +378,98 @@ p {
 
 .darkBlueBtn {
   background: #0C1423;
+  border: none;
+  color: #FFFFFF;
+  padding: 11px 13px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.greenBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.imgShadow {
+  position: absolute;
+  width: 43%;
+  height: 26.5vw;
+  background-color: #86E0F9;
+  left: 42px;
+  top: 0;
+}
+
+.imageContainer,
+.textContainer {
+  border: 2px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.imageContainer img,
+.textContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.imageContainer img {
+  position: absolute;
+  width: 44%;
+}
+
+.imageContainer img[alt^="Girl"] {
+  left: 0;
+  top: -40px;
+  z-index: 10;
+}
+
+.imageContainer img[alt^="Singular"] {
+  bottom: -40px;
+  right: 0;
+  -webkit-box-shadow: -37px 40px #86E0F9;
+          box-shadow: -37px 40px #86E0F9;
+}
+
+.textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5.6rem;
+}
+
+.greenBlog div:nth-of-type(2) {
+  padding-left: 75px;
+}
+
+.greenBlog div:nth-of-type(3) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: end;
+}
+
+.greenSection {
+  background-color: #0F614E;
+  position: relative;
+  padding: 100px 0;
+}
+
+.blueSec {
+  height: 500px;
 }
