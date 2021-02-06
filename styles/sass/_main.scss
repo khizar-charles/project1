@@ -79,7 +79,7 @@ p{
 
 .imageContainer,
 .textContainer{
-    border: 2px solid black;
+    // border: 2px solid black;
     flex: 1 1 50%;
     img{
         object-fit: cover;
@@ -104,7 +104,7 @@ p{
     img[alt^="Singular"]{
         bottom: -40px;
         right: 0;
-        box-shadow: -37px 40px $robinBlue ;
+        box-shadow: -34px 35px $robinBlue ;
     }
 }
 
@@ -131,6 +131,12 @@ p{
     align-items: flex-start;
     // justify-content: space-between;
     padding: 5.6rem;
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
+.textContainer>p{
+    margin: 32px 0;
 }
 
 .greenBlog div:nth-of-type(2){
@@ -140,14 +146,21 @@ p{
 .greenBlog div:nth-of-type(3){
     align-items: flex-end;
     text-align: end;
+    padding-top: 94px;
 }
 
 .greenSection{
     background-color: $spruce;
     position: relative;
-    padding: 100px 0;
+    // padding: 110px 0;
+    padding-top: 68px;
+    padding-bottom: 0;
 }
 
-.blueSec{
+    // need 64 px for H2 to top of green section
+    // need 32 px down for button
+
+.blueSection{
     height: 500px;
 }
+
