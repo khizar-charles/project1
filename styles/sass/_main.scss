@@ -14,16 +14,12 @@
     align-items: center;  
     // border: 3px solid white;
     margin: 200px 0;
+    *{
+        padding: 0 6.5vw;
+        padding-bottom: 1.95rem;
+    }
 }
 
-.whatIsUnder>*{
-    padding: 0 6.5vw;
-    padding-bottom: 1.95rem;
-}
-
-.sectionOne{
-    z-index: 5;
-}
 
 h2{
     font-size: 2.6rem;
@@ -59,108 +55,214 @@ p{
     font-size: 1.3rem;
 }
 
-.greenBlog{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    // border: 1px solid green;
-}
-
-.imgShadow{
-    // z-index: 2;
-    position: absolute;
-    width: 43%;
-    // height: 340px;
-    height: 26.5vw;
-    background-color: $robinBlue;
-    left: 42px;
-    top: 0;
-}
-
-.imageContainer,
-.textContainer{
-    // border: 2px solid black;
-    flex: 1 1 50%;
-    img{
-        object-fit: cover;
-        width: 100%;
-    }
-}
-
-
-
-.imageContainer{
-    img{
-        position: absolute;
-        width: 44%;
-    }
-    img[alt^="Girl"]{
-        left: 0;
-        top: -40px;
-        // box-shadow: 37px 40px $robinBlue;
-        z-index: 10;
-
-    }
-    img[alt^="Singular"]{
-        bottom: -40px;
-        right: 0;
-        box-shadow: -34px 35px $robinBlue ;
-    }
-}
-
-// .imageContainer{
-//     // box-shadow: 37px 25px $robinBlue;
-//     position: relative;
-//     z-index: 2;
-//     img{
-//         // z-index: 2;
-//     }
-//     .imgShadow{
-//         width: 100%;
-//         height: 100%;
-//         position: absolute;
-//         background-color: $robinBlue;
-//         top: 20px;
-//         z-index: 1;
-//     }
-// }
-
-.textContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    // justify-content: space-between;
-    padding: 5.6rem;
-    padding-top: 0;
-    padding-bottom: 4rem;
-}
-
-.textContainer>p{
-    margin: 32px 0;
-}
-
-.greenBlog div:nth-of-type(2){
-    padding-left: 75px;
-}
-
-.greenBlog div:nth-of-type(3){
-    align-items: flex-end;
-    text-align: end;
-    padding-top: 94px;
-}
-
 .greenSection{
     background-color: $spruce;
     position: relative;
     // padding: 110px 0;
     padding-top: 68px;
     padding-bottom: 0;
+
+    .greenBlog{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        // border: 1px solid green;
+        .imageContainer,
+        .textContainer{
+            // border: 2px solid black;
+            flex: 1 1 50%;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        .imageContainer{
+            .imgShadow{
+                // z-index: 2;
+                position: absolute;
+                width: 43%;
+                // height: 340px;
+                height: 26.5vw;
+                background-color: $robinBlue;
+                left: 42px;
+                top: 0;
+            }
+            img{
+                position: absolute;
+                width: 44%;
+            }
+            img[alt^="Girl"]{
+                left: 0;
+                top: -40px;
+                // box-shadow: 37px 40px $robinBlue;
+                z-index: 10;
+        
+            }
+            img[alt^="Singular"]{
+                bottom: -40px;
+                right: 0;
+                box-shadow: -34px 35px $robinBlue ;
+            }
+        }
+
+        div:nth-of-type(2){
+            padding-left: 75px;
+        }
+        
+        div:nth-of-type(3){
+            align-items: flex-end;
+            text-align: end;
+            padding-top: 94px;
+        }
+        .textContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            // justify-content: space-between;
+            padding: 5.6rem;
+            padding-top: 0;
+            padding-bottom: 4rem;
+            p{
+                margin: 32px 0;
+            }
+        }
+    }
 }
+
+
 
     // need 64 px for H2 to top of green section
     // need 32 px down for button
 
 .blueSection{
-    height: 500px;
+    // height: 500px;
+    padding-top: 100px;
+    padding-bottom: 46px;
+    .blueSectionInner{
+        display: flex;
+        flex-wrap: wrap;
+        // Sub-container within .blueSection
+        .blueContent{
+            display: flex;
+            justify-content: center;
+            // border: 1px solid blue;
+            flex: 1 1 50%;
+            padding: 30px 0;
+            padding-right: 20px;
+            .blueContentText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                // border: 1px solid pink;
+                h2{
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
 }
 
+// Icon container formatting
+// <div class="iconContainer">
+// <div class="iconBg"><i class="fas fa-location-arrow"></i></div>
+// </div>
+
+
+
+
+.iconContainer{
+    // border: 3px solid pink;
+    width: max-content;
+    padding-right: 10px;
+    // border: 1px solid orange;
+    // Formatting for the round background behind the icon
+    .iconBg{
+        background: $robinBlue;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
+
+// Formatting for the icon itself
+.fas{
+    color: $darkBlueGrey;
+    font-size: 2.5rem;
+    // border: 1px solid pink;
+}
+
+// Background image container for shark full bleed JPG
+.sharkContainer{
+    background-image: url("../assets/banner.jpg");
+    background-repeat: none;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    // background: pink;
+}
+
+// This Month Profile Container
+.thisMonthContainer{
+    // height: 425px;
+    // border: 1px solid pink;
+    padding: 100px 0 80px 0;
+    // Flex container for fish image and This Month Profile Text sub containers
+    .thisMonthInnerCont{
+        display: flex;
+        .fishSwimCont{
+            flex: 1 1 30%;
+            img{
+                width: 80%;
+                box-shadow: 30px 30px $robinBlue;
+            }
+        }
+        .thisMonthTextCont{
+            flex: 1 1 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space space-between;
+            align-items: flex-start;
+            padding-top: 5px;
+            padding-left: 43px;
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.58rem;
+                letter-spacing: 0;
+                padding-top: 16px;
+                padding-bottom: 42px;
+            }
+        }       
+    }
+}
+
+// Parent container for 3 green photos section
+.greenGalleryCont{
+    // height: 480px;
+    background-color: $spruce;
+    padding: 80px 0;
+    .greenInnerCont{
+        display: flex;
+        justify-content: space-between;
+        img{
+            // flex: 0 0 calc(100%/3);
+            width: calc((100% - 60px) / 3);
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: $robinBlue;
+    color: black;
+    padding: 4.5px 0;
+    p{
+        font-size: 1.5rem;
+    }
+}
