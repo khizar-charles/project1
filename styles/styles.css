@@ -702,7 +702,7 @@ main {
   height: max-content;
   background-color: #0F614E;
   margin-top: 105px;
-  padding-top: 345px;
+  padding-top: 333px;
 }
 
 .blogMainContainer .sidebar img {
@@ -716,6 +716,11 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 62%;
           flex: 0 1 62%;
+}
+
+h3 {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
 }
 
 .sidebarText {

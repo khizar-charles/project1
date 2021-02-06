@@ -14,7 +14,7 @@ main{
         height: max-content;
         background-color: $spruce;
         margin-top: 105px;
-        padding-top: 345px;
+        padding-top: 333px;
         img{
             position: absolute;
             left: 0;
@@ -25,6 +25,11 @@ main{
     .featureContents{
         flex: 0 1 62%;
     }
+}
+
+h3{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
 }
 
 // .greenBG{
