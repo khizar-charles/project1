@@ -287,6 +287,7 @@ header .homeHeaderContents h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
+  text-align: left;
 }
 
 nav {
@@ -354,7 +355,7 @@ nav li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 200px 0;
+  margin: 220px 0 176px 0;
 }
 
 .whatIsUnder * {
@@ -393,37 +394,6 @@ p {
   font-size: 1.3rem;
 }
 
-.greenSection {
-  background-color: #0F614E;
-  position: relative;
-  padding-top: 68px;
-  padding-bottom: 0;
-}
-
-.greenSection .greenBlog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.greenSection .greenBlog div:nth-of-type(2) {
-  padding-left: 75px;
-}
-
-.greenSection .greenBlog div:nth-of-type(3) {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: end;
-  padding-top: 94px;
-}
-
 .greenSection .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,9 +402,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 5.6rem;
   padding-top: 0;
   padding-bottom: 4rem;
@@ -460,8 +430,8 @@ p {
 
 .greenSection .imageContainer .imgShadow {
   position: absolute;
-  width: 43%;
-  height: 26.5vw;
+  width: 41%;
+  height: 25.5vw;
   background-color: #86E0F9;
   left: 42px;
   top: 0;
@@ -469,7 +439,7 @@ p {
 
 .greenSection .imageContainer img {
   position: absolute;
-  width: 44%;
+  width: 42%;
 }
 
 .greenSection .imageContainer img[alt^="Girl"] {
@@ -483,6 +453,37 @@ p {
   right: 0;
   -webkit-box-shadow: -34px 35px #86E0F9;
           box-shadow: -34px 35px #86E0F9;
+}
+
+.greenSection {
+  background-color: #0F614E;
+  position: relative;
+  padding: 32px 0;
+}
+
+.greenSection .greenBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.greenSection .greenBlog div:nth-of-type(2) {
+  padding-left: 10.2rem;
+  padding-right: 0;
+}
+
+.greenSection .greenBlog div:nth-of-type(3) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: end;
+  padding: 0 10.1rem 0 0;
 }
 
 .blueSection {

@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;  
-    margin: 200px 0;
+    margin: 220px 0 176px 0;
     *{
         padding: 0 6.5vw;
         padding-bottom: 1.95rem;
@@ -51,32 +51,15 @@ p{
     font-size: 1.3rem;
 }
 
-.greenSection{
-    background-color: $spruce;
-    position: relative;
-    padding-top: 68px;
-    padding-bottom: 0;
-    .greenBlog{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        div:nth-of-type(2){
-            padding-left: 75px;
-        }
-        div:nth-of-type(3){
-            align-items: flex-end;
-            text-align: end;
-            padding-top: 94px;
-        }
-        
-    }
-}
-
-.greenSection{
-    .textContainer{
+// .childTextContainer{
+    //     border: 2px solid maroon;
+    //     align-self: flex-start;
+    // }
+    .greenSection{
+        .textContainer{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: flex-start;
         // justify-content: space-between;
         padding: 5.6rem;
         padding-top: 0;
@@ -98,23 +81,23 @@ p{
         .imgShadow{
             // z-index: 2;
             position: absolute;
-            width: 43%;
+            width: 41%;
             // height: 340px;
-            height: 26.5vw;
+            height: 25.5vw;
             background-color: $robinBlue;
             left: 42px;
             top: 0;
         }
         img{
             position: absolute;
-            width: 44%;
+            width: 42%;
         }
         img[alt^="Girl"]{
             left: 0;
             top: -40px;
             // box-shadow: 37px 40px $robinBlue;
             z-index: 10;
-    
+            
         }
         img[alt^="Singular"]{
             bottom: -40px;
@@ -124,10 +107,39 @@ p{
     }
 }
 
+.greenSection{
+    background-color: $spruce;
+    position: relative;
+    padding: 32px 0;
+    // height: 51vw;
+    // max-height: 655px;
+    .greenBlog{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        // height: 51vw;
+        // max-height: 655px;
+        div:nth-of-type(2){
+            padding-left: 10.2rem;
+            padding-right: 0;
+            // padding-top: 32px;
+        }
+        div:nth-of-type(3){
+            justify-content: flex-end;
+            text-align: end;
+            padding: 0 10.1rem 0 0;
+            // .childTextContainer{
+            //     justify-content: flex-end;
+            // }
+        }
+    }
+}
 
+// .secondTextContainer{
+//     justify-content: flex-end;
+// }
 
-
-    // need 64 px for H2 to top of green section
+// need 64 px for H2 to top of green section
     // need 32 px down for button
 
 .blueSection{
