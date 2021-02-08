@@ -1,20 +1,23 @@
-main{
+// Sets main section of blog.html to position relative and padding-bottom: 68px;
+.blogProps{
     position: relative;
+    padding-bottom: 68px;
 }
 
-.blogMainContainer{
+// Generic page main container used by both contact.html and blog.html
+.pageMainContainer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    img{
-        width: 100%;
-    }
+    // img{
+    //     width: 100%;
+    // }
     .sidebar{
         flex: 0 1 29%;
         height: max-content;
         background-color: $spruce;
         margin-top: 105px;
-        padding-top: 333px;
+        // padding-top: 333px;
         img{
             position: absolute;
             left: 0;
@@ -23,7 +26,7 @@ main{
         }
     }
     .featureContents{
-        flex: 0 1 64%;
+        flex: 0 1 65.5%;
     }
 }
 
@@ -32,10 +35,23 @@ h3{
     padding-bottom: 14px;
 }
 
+.sidebar{
+    .sidebarFiller{
+        height: 26vw;
+        max-height: 332px;
+        // height: 372px;
+        width: 100%;
+        // border: 1px solid pink;
+        z-index: 50;
+    }
+}
+
+
 .sidebarText{
     display: flex;
     flex-direction: column;
     padding: 20px;
+
     .sidebarTop{
         padding-bottom: 56px;
     }
@@ -56,19 +72,27 @@ h3{
     }
 }
 
+.featuredContentsFiller{
+    max-height: 391px;
+    height: 30.5vw;
+    border-left: 5px solid $robinBlue;
+}
+
 .featureContents{
     position: relative;
-    img{
+    .featureImg{
         position: absolute;
-        width: 114%;
+        width: 115%;
         top: -198px;
-        right: -10vw;
+        // right: -10vw;
+        left: 34px;
         z-index: 5;
         // box-shadow: -32px 45px rgba(255, 165, 0, 0.4);
     }
     .featureImgBG{
-        width: 115.5%;
-        height: 490px;
+        width: 116.5%;
+        height: 39.5vw;
+        max-height: 506px;
         background-color: $robinBlue;
         position: absolute;
         left: 0;
@@ -76,10 +100,11 @@ h3{
     }
 }
 .featureContentText{
-    padding-top: 382px;
+    // padding-top: 382px;
     border-left: 5px solid $robinBlue;
     border-bottom: 5px solid $robinBlue;
-    padding-left: 42px;
+    padding-left: 40px;
+    padding-bottom: 15px;
     h2{
         text-align: left;
     }
@@ -92,3 +117,4 @@ h3{
     padding-top: 10px;
     padding-bottom: 50px;
 }
+

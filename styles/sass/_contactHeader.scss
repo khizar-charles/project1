@@ -1,11 +1,11 @@
 // Header section formatting specific to blog page
-.blogHeader{
-    background-image: url(../assets/blog-header.jpg);
+.contactHeader{
+    background-image: url(../assets/contact-header.jpg);
     height: 460px;
-    .blogHeaderContents{
+    .contactHeaderContents{
         display: flex;
         justify-content: flex-end;
-        padding-right: 38vw;
+        padding-right: 25.5vw;
         align-items: flex-end;
         margin-top: 83px; 
     }
