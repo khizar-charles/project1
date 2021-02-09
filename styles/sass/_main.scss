@@ -17,13 +17,15 @@
         padding: 0 6.5vw;
         padding-bottom: 1.95rem;
     }
+    h2{
+        text-align: center;
+    }
 }
 
 
 h2{
     font-size: 2.6rem;
     letter-spacing: 0.1rem;
-    text-align: center;
     color: $white;
 }
 
@@ -65,7 +67,7 @@ p{
         padding-top: 0;
         padding-bottom: 4rem;
         p{
-            margin: 32px 0;
+            margin: 22px 0;
         }
     }
     .imageContainer,
@@ -79,14 +81,14 @@ p{
     }
     .imageContainer{
         .imgShadow{
-            // z-index: 2;
             position: absolute;
             width: 41%;
             // height: 340px;
             height: 25.5vw;
             background-color: $robinBlue;
+            max-height: 326.4px;
             left: 42px;
-            top: 0;
+            top: -32px;
         }
         img{
             position: absolute;
@@ -94,13 +96,12 @@ p{
         }
         img[alt^="Girl"]{
             left: 0;
-            top: -40px;
+            top: -75px;
             // box-shadow: 37px 40px $robinBlue;
             z-index: 10;
-            
         }
         img[alt^="Singular"]{
-            bottom: -40px;
+            bottom: -75px;
             right: 0;
             box-shadow: -34px 35px $robinBlue ;
         }
@@ -109,7 +110,7 @@ p{
 
 .greenSection{
     background-color: $spruce;
-    position: relative;
+    // position: relative;
     padding: 32px 0;
     // height: 51vw;
     // max-height: 655px;
@@ -122,12 +123,15 @@ p{
         div:nth-of-type(2){
             padding-left: 10.2rem;
             padding-right: 0;
-            // padding-top: 32px;
+            padding-top: 32px;
+            padding: 20px 0 20px 102px;
+            margin-bottom: 68px;
         }
         div:nth-of-type(3){
             justify-content: flex-end;
             text-align: end;
             padding: 0 10.1rem 0 0;
+            margin-top: 68px;
             // .childTextContainer{
             //     justify-content: flex-end;
             // }
@@ -209,6 +213,7 @@ p{
 .sharkContainer{
     background-image: url("../assets/banner.jpg");
     background-repeat: none;
+    background-position: center;
     background-size: cover;
     height: 400px;
     width: 100%;

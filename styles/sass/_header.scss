@@ -25,15 +25,18 @@ header{
             line-height: 9.7rem;
             flex: 0 0 35%;
             text-align: left;
+            z-index: 5;
         }
     }
 }
+
 
 // NAV formatting
 nav{
     padding-top: 25px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     // NAV UL formatting
     ul{
         list-style-type: none;
@@ -43,6 +46,14 @@ nav{
         width: 37%;
         // border: 3px solid red;
         
+    }
+    .fa-bars{
+        font-size: 3rem;
+        display: none;
+    }
+    label,
+    input{
+        display: none;
     }
 }
 
@@ -59,6 +70,9 @@ nav li{
         }
     }
 
+}
+.indexProps{
+    position: relative;
 }
 
 // Container for goldfish image

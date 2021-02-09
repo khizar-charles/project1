@@ -288,6 +288,7 @@ header .homeHeaderContents h1 {
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
   text-align: left;
+  z-index: 5;
 }
 
 nav {
@@ -298,6 +299,9 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav ul {
@@ -315,6 +319,16 @@ nav ul {
   width: 37%;
 }
 
+nav .fa-bars {
+  font-size: 3rem;
+  display: none;
+}
+
+nav label,
+nav input {
+  display: none;
+}
+
 nav li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -325,6 +339,10 @@ nav li a {
 
 nav li a:hover {
   color: #86E0F9;
+}
+
+.indexProps {
+  position: relative;
 }
 
 .goldfishContainer {
@@ -363,10 +381,13 @@ nav li a:hover {
   padding-bottom: 1.95rem;
 }
 
+.whatIsUnder h2 {
+  text-align: center;
+}
+
 h2 {
   font-size: 2.6rem;
   letter-spacing: 0.1rem;
-  text-align: center;
   color: #FFFFFF;
 }
 
@@ -411,7 +432,7 @@ p {
 }
 
 .greenSection .textContainer p {
-  margin: 32px 0;
+  margin: 22px 0;
 }
 
 .greenSection .imageContainer,
@@ -433,8 +454,9 @@ p {
   width: 41%;
   height: 25.5vw;
   background-color: #86E0F9;
+  max-height: 326.4px;
   left: 42px;
-  top: 0;
+  top: -32px;
 }
 
 .greenSection .imageContainer img {
@@ -444,12 +466,12 @@ p {
 
 .greenSection .imageContainer img[alt^="Girl"] {
   left: 0;
-  top: -40px;
+  top: -75px;
   z-index: 10;
 }
 
 .greenSection .imageContainer img[alt^="Singular"] {
-  bottom: -40px;
+  bottom: -75px;
   right: 0;
   -webkit-box-shadow: -34px 35px #86E0F9;
           box-shadow: -34px 35px #86E0F9;
@@ -457,7 +479,6 @@ p {
 
 .greenSection {
   background-color: #0F614E;
-  position: relative;
   padding: 32px 0;
 }
 
@@ -476,6 +497,9 @@ p {
 .greenSection .greenBlog div:nth-of-type(2) {
   padding-left: 10.2rem;
   padding-right: 0;
+  padding-top: 32px;
+  padding: 20px 0 20px 102px;
+  margin-bottom: 68px;
 }
 
 .greenSection .greenBlog div:nth-of-type(3) {
@@ -484,6 +508,7 @@ p {
           justify-content: flex-end;
   text-align: end;
   padding: 0 10.1rem 0 0;
+  margin-top: 68px;
 }
 
 .blueSection {
@@ -565,6 +590,7 @@ p {
 .sharkContainer {
   background-image: url("../assets/banner.jpg");
   background-repeat: none;
+  background-position: center;
   background-size: cover;
   height: 400px;
   width: 100%;
@@ -1049,4 +1075,188 @@ h1 {
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .greenSection .greenBlog div:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  .greenSection .greenBlog div:nth-of-type(3) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  nav .fa-bars,
+  nav label,
+  nav input {
+    display: block;
+  }
+  nav .slideOutMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: rgba(12, 20, 35, 0.8);
+    position: fixed;
+    top: 0;
+    right: -35%;
+    width: 35%;
+    height: 100vh;
+    z-index: 15;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  nav .slideOutMenu a {
+    color: #FFFFFF;
+    font-size: 3rem;
+    border-bottom: 2px solid #FFFFFF;
+    display: block;
+    padding: 20px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .slideOutMenu a:hover,
+  nav .slideOutMenu a:focus {
+    background: #86E0F9;
+    color: #0C1423;
+  }
+  nav input[type="checkbox"]:checked + .slideOutMenu {
+    right: 0;
+  }
+  nav input[type="checkbox"] {
+    visibility: hidden;
+  }
+  nav label[for="toggle"] {
+    position: fixed;
+    color: #FFFFFF;
+    top: 20px;
+    left: 20px;
+    z-index: 15;
+    cursor: pointer;
+  }
+  .goldfishContainer {
+    width: 45%;
+  }
+  .whatIsUnder {
+    margin: 110px 0 110px 0;
+  }
+  .greenSection .greenBlog div:nth-of-type(2) {
+    padding-left: 50px;
+  }
+  .greenSection .greenBlog div:nth-of-type(3) {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 740px) {
+  .wrapper {
+    width: 90%;
+  }
+  .whatIsUnder p {
+    padding: 0 0 19.5px 0;
+  }
+  .greenSection .greenBlog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .greenSection .greenBlog div:nth-of-type(2) {
+    padding: 32px 0 60px 0;
+  }
+  .greenSection .greenBlog div:nth-of-type(3) {
+    padding: 0 0 32px 0;
+  }
+  .greenSection .imageContainer img {
+    position: static;
+    width: 100%;
+  }
+  .greenSection .imageContainer img[alt^="Singular"] {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .imgShadow {
+    display: none;
+  }
+  .textContainer {
+    padding: 0;
+  }
+  .blueSection {
+    padding-top: 46px;
+  }
+  .blueSectionInner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blueSectionInner .blueContent {
+    padding-right: 0;
+  }
+  .thisMonthCont {
+    padding: 80px 0;
+  }
+  .thisMonthInnerCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thisMonthInnerCont .fishSwimCont img {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-bottom: 25px;
+  }
+  .thisMonthInnerCont .thisMonthTextCont {
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .greenGalleryCont .greenInnerCont img:nth-of-type(3) {
+    display: none;
+  }
+  .greenGalleryCont .greenInnerCont img {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    position: relative;
+  }
+  header .goldfishContainer {
+    bottom: 0;
+    top: unset;
+    width: 55%;
+  }
+  .indexProps {
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  nav .slideOutMenu {
+    width: 85%;
+    right: -85%;
+  }
+  .greenGalleryCont .greenInnerCont {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .greenGalleryCont .greenInnerCont img:nth-of-type(1) {
+    display: none;
+  }
+  .greenGalleryCont .greenInnerCont img {
+    width: 80%;
+  }
 }
