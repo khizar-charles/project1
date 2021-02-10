@@ -5,9 +5,20 @@
     .blogHeaderContents{
         display: flex;
         justify-content: flex-end;
-        padding-right: 38vw;
-        align-items: flex-end;
+        // padding-right: 38vw;
+        // align-items: flex-end;
         margin-top: 83px; 
+        // border: 1px solid pink;
+        // div{
+        //     flex: 0 1 29%;
+            // border: 1px solid yellow;
+        //     height: 100px;
+        // }
+        h1{
+            flex: 1 1 65.5%;
+            margin-right: 91px;
+            // border: 1px solid white;
+        }
     }
 }
 

@@ -21,6 +21,9 @@ html{
     font-size: 62.5%;
     font-family: 'Barlow', sans-serif;
     color: $white;
+    body{
+        min-width: 500px;
+    }
 }
 
 // Wrapper formatting
