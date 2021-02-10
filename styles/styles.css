@@ -308,6 +308,10 @@ nav {
           align-items: center;
 }
 
+nav .slideOutMenu {
+  z-index: 30;
+}
+
 nav ul {
   list-style-type: none;
   display: -webkit-box;
@@ -1039,7 +1043,7 @@ form button {
 }
 
 .featureContents form {
-  z-index: 20;
+  z-index: 3;
 }
 
 .contactBar {
@@ -1069,7 +1073,6 @@ h3 a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 25.5vw;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1082,6 +1085,10 @@ h1 {
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65.5%;
+          flex: 1 1 65.5%;
+  margin-right: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -1206,6 +1213,7 @@ h1 {
   }
   .blueSectionInner .blueContent {
     padding-right: 0;
+    padding-left: 30px;
   }
   .thisMonthCont {
     padding: 80px 0;
@@ -1265,6 +1273,9 @@ h1 {
   }
   .greenGalleryCont .greenInnerCont img {
     width: 80%;
+  }
+  .blueSectionInner .blueContent {
+    padding-left: 10px;
   }
 }
 
@@ -1399,6 +1410,108 @@ h1 {
     padding: 15px;
   }
   form textarea {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 880px) {
+  .contactHeaderContents h1 {
+    margin-right: 0;
+  }
+  .contactMainProps .wrapper {
+    width: 90%;
+  }
+  .contactMainProps .wrapper .pageMainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMainProps .wrapper .pageMainContainer .sidebar {
+    margin-top: 0;
+    background: #0C1423;
+    padding-right: 0px;
+  }
+  .contactFormProps {
+    right: -30px;
+    position: relative;
+    width: 100%;
+    top: -115px;
+  }
+  .pageMainContainer .altProps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contactBar {
+    padding-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .iconRow {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .iconRow a {
+    padding: 20px;
+  }
+  .iconRow .fab {
+    font-size: 3.5rem;
+  }
+  .footerPositioning {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .contactBar {
+    padding-right: 0;
+  }
+  .iconRow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 10px;
+  }
+  .iconRow a {
+    width: 50%;
+    padding: 2px;
+  }
+  .altProps {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sidebar {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactFormProps .contactFields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contactFormProps input {
+    padding: 15px;
+  }
+  .contactFormProps textarea {
     padding: 10px 12px;
   }
 }

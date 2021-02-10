@@ -37,6 +37,11 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
+    .slideOutMenu{
+        z-index: 30;
+    }
+    
     // NAV UL formatting
     ul{
         list-style-type: none;

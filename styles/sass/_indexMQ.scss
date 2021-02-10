@@ -119,6 +119,7 @@
         flex-direction: column;
         .blueContent{
             padding-right: 0;
+            padding-left: 30px;
         }
     }
     .thisMonthCont{
@@ -173,4 +174,10 @@
             width: 80%;
         }
     }
+    .blueSectionInner{
+        .blueContent{
+            padding-left: 10px;
+        }
+    }
+
 }
