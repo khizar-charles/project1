@@ -29,7 +29,8 @@ p {
 }
 
 //Hover properties for all buttons
-button:hover{
+button:hover,
+button:focus{
   background: $white;
   color: $darkBlueGrey;
   cursor: pointer;

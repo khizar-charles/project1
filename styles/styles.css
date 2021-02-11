@@ -404,7 +404,8 @@ p {
   line-height: 2.44rem;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: #FFFFFF;
   color: #0C1423;
   cursor: pointer;
