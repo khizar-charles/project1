@@ -9,7 +9,6 @@ body{
 // Header fomatting
 header{
     background-image: linear-gradient(90deg, rgba(0, 28, 36, 0.7) 0%, rgba(10,47,69,0.6) 100%), url(../assets/header-image.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 591px;
@@ -37,7 +36,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+    // Set slideout menu to appear in front of all elements
     .slideOutMenu{
         z-index: 30;
     }
@@ -49,9 +48,8 @@ nav{
         flex-direction: row;
         justify-content: space-between;
         width: 37%;
-        // border: 3px solid red;
-        
     }
+    //Formatting for the hamburger menu
     .fa-bars{
         font-size: 3rem;
         display: none;
@@ -74,8 +72,8 @@ nav li{
             color: $robinBlue;
         }
     }
-
 }
+//Additional wrapper to constrain images within viewport for large window width
 .indexProps{
     position: relative;
 }
@@ -86,19 +84,12 @@ nav li{
     right: 0;
     top: 160px;
     width: 57%;
-    // flex: 0 0 57%;
-    // border: 3px solid red;
     img{
         width: 100%;
-        // border: 3px solid pink;
     }
 }
 
-// Class for changing current page <a> tag in NAV to robin blue in colo
+// Class for changing current page <a> tag in NAV to robin blue in color
 .currentPage{
     color: $robinBlue;
 }
-
-
-
-

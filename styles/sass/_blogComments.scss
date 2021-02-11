@@ -11,18 +11,14 @@
     display: flex;
     justify-content: space-between;   
     padding: 36px 0;
-
     .profilePic{
         flex: 0 1 13%;
         padding-top: 7px;
-        // height: 12%;
-        // display: block;
         img{
             width: 100%;
             display: block;
         }
     }
-
     .userTextCont{
         flex: 0 1 82%; 
         display: flex;
@@ -30,10 +26,5 @@
         .userComments{
             padding: 15px 0;
         }
-    
     }
-
 }
-
-
- 

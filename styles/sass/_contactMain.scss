@@ -3,27 +3,26 @@
     position: relative;
 }
 
+//Styles for social media icon row
 .iconRow{
     display: flex;
     width: 43%;
     text-align: left;
-    // border: 1px solid black;
     justify-content: space-between;
     padding-bottom: 22px;
-    
 }
 
+//Styles for social media icons
 .fab{
     font-size: 2rem;
     color: $white;
 }
 
-
+//Specific z-index set to keep form behind slide-out menu
 .featureContents{
     form{
         z-index: 3;
     }
-
 }
 
 // Additional class for contact.html 's sidebar
@@ -42,4 +41,3 @@ h3 a{
 .altProps{
     margin-bottom: 70px;
 }
-

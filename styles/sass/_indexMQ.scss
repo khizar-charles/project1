@@ -1,4 +1,6 @@
+//Formatting for index.html at viewport 1000px width
 @media(max-width: 1000px){
+    //Adjusting margins for the greenblog
     .greenSection{
         .greenBlog{
             div:nth-of-type(2){
@@ -11,6 +13,7 @@
     }
 }
 
+//Formatting for index.html at viewport 880px width
 @media(max-width: 880px){
     nav{
         .fa-bars,
@@ -18,7 +21,7 @@
         input{
             display: block;
         }
-
+        //Slideout menu formatting
         .slideOutMenu {
             display: flex;
             flex-direction: column;
@@ -32,7 +35,7 @@
             z-index: 15;
             transition: all 1s ease;
         }
-
+        //Styles for the Slideout menu links
         .slideOutMenu a {
             color: $white;
             font-size: 3rem;
@@ -41,21 +44,17 @@
             padding: 20px;
             transition: all 0.5s ease-in-out;
         }
-
         .slideOutMenu a:hover,
         .slideOutMenu a:focus {
             background: $robinBlue;
             color: $darkBlueGrey;
         }
-
         input[type="checkbox"]:checked + .slideOutMenu {
             right: 0;
         }
-
         input[type="checkbox"] {
             visibility: hidden;
         }
-
         label[for="toggle"] {
             position: fixed;
             color: $white;
@@ -65,9 +64,12 @@
             cursor: pointer;
         }          
     }
+
+    //Adjusting container for goldFish Image
     .goldfishContainer{
         width: 45%;
     }
+    //Additional formatting for green section
     .whatIsUnder{
         margin: 110px 0 110px 0;
     }
@@ -81,10 +83,13 @@
     }
 }
 
+//Formatting for index.html at viewport 740px width
 @media(max-width:740px){
+    //Adjusting the wrapper to fit more content withing vw
     .wrapper{
         width: 90%;
     }
+    //Additional formatting for the index.html
     .whatIsUnder p{
         padding: 0 0 19.5px 0;
     }
@@ -147,6 +152,7 @@
     }
 }
 
+//Formatting for index.html at viewport 640px width
 @media(max-width:640px){
     header{
         position: relative;
@@ -160,6 +166,8 @@
         position: static;
     }
 }
+
+//Formatting for index.html at viewport 500px width
 @media(max-width:500px){
     nav .slideOutMenu{
         width: 85%;
@@ -179,5 +187,4 @@
             padding-left: 10px;
         }
     }
-
 }
